@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>김하린 | AI Native Job Portfolio</title>
+  <style>
+    :root{--bg:#f6f6f2;--card:#fff;--text:#171717;--muted:#6d6d68;--line:#d9d9d2;--accent:#1f4f46;--soft:#e7efe9;--max:1120px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Pretendard,"Noto Sans KR",system-ui,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+    header{position:sticky;top:0;z-index:20;background:rgba(246,246,242,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800}.navlinks{display:flex;gap:24px;font-size:14px;color:var(--muted)}
+    section{padding:72px 0;border-top:1px solid var(--line)} .hero{padding:96px 0 72px;border-top:0}
+    .eyebrow,.meta{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:800}
+    h1{font-size:clamp(44px,8vw,86px);line-height:1.02;letter-spacing:-.055em;margin:16px 0 24px;max-width:980px}
+    .lead{font-size:20px;max-width:760px;color:#444}.chips{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 36px}.chip{border:1px solid var(--line);background:var(--card);padding:8px 12px;border-radius:999px;font-size:13px}
+    .btn{padding:13px 18px;border-radius:10px;border:1px solid var(--text);font-weight:700;font-size:14px;display:inline-block;margin-right:8px}.btn.primary{background:var(--text);color:#fff}
+    .section-head{display:grid;grid-template-columns:180px 1fr;gap:24px;margin-bottom:40px}.section-head h2{margin:0;font-size:34px;letter-spacing:-.04em}.section-head p{margin:6px 0 0;color:var(--muted);max-width:720px}
+    .grid,.story,.match-demo{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}.card h3{margin:10px 0;font-size:24px}.card p{color:var(--muted)}
+    .metrics{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.metric{background:var(--soft);border-radius:10px;padding:10px 12px;font-size:13px}.text-link{font-size:14px;font-weight:800;border-bottom:1px solid var(--text);margin-right:12px}
+    .score{background:var(--accent);color:#fff;border-radius:18px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;min-height:250px}.score .num{font-size:72px;font-weight:900;letter-spacing:-.06em}.score small{opacity:.8}
+    .match-item{margin:14px 0}.label{display:flex;justify-content:space-between;font-size:13px;font-weight:700}.bar{height:9px;background:#e9e9e2;border-radius:99px;overflow:hidden;margin:8px 0 16px}.bar span{display:block;height:100%;background:var(--accent)}
+    .skill-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.skill{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}.skill b{display:block}.skill span{color:var(--muted);font-size:13px}
+    .callout{background:#171717;color:#fff;border-radius:18px;padding:28px}.callout p{color:#d7d7d2} footer{padding:56px 0 72px;color:var(--muted)}
+    @media(max-width:800px){.navlinks{display:none}.section-head,.grid,.story,.match-demo{grid-template-columns:1fr}.skill-list{grid-template-columns:1fr 1fr}h1{font-size:52px}}
+    @media(max-width:520px){.wrap{padding:0 18px}.skill-list{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav><div class="brand">KIM HARIN — PORTFOLIO</div><div class="navlinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#match">Job Match</a><a href="#skills">Skills</a></div></nav></div></header>
+<main><div class="wrap">
+
+<section class="hero">
+  <div class="eyebrow">AI Native Job Portfolio · Demo</div>
+  <h1>데이터를 보고,<br>작게 만들고,<br>빠르게 개선합니다.</h1>
+  <p class="lead">데이터 분석과 디지털 마케팅에 관심 있는 취업 준비생 김하린입니다. 대시보드, 자동화, 바이브 코딩 프로젝트를 통해 문제를 정의하고 실제 결과물로 연결하는 연습을 하고 있습니다.</p>
+  <div class="chips"><span class="chip">Data Analysis</span><span class="chip">Digital Marketing</span><span class="chip">Looker Studio</span><span class="chip">Apps Script</span><span class="chip">Vibe Coding</span></div>
+  <a class="btn primary" href="#projects">프로젝트 보기</a><a class="btn" href="#match">JD 적합도 POC 보기</a>
+</section>
+
+<section id="about">
+  <div class="section-head"><div class="meta">01 · About</div><div><h2>저를 한 문장으로 설명하면</h2><p>복잡한 문제를 작은 단위로 나누고, 데이터와 AI 도구를 활용해 직접 확인 가능한 결과물로 만드는 사람입니다.</p></div></div>
+  <div class="story">
+    <div class="card"><div class="meta">Target Role</div><h3>Marketing Data Analyst</h3><p>마케팅 성과를 데이터로 해석하고, 반복 업무를 자동화하며, 팀이 더 빠르게 의사결정할 수 있도록 돕는 역할을 목표로 합니다.</p></div>
+    <div class="card"><div class="meta">Portfolio Principle</div><h3>Problem → Build → Explain</h3><p>무엇을 만들었는지보다 왜 만들었고 어떤 문제를 해결했는지를 설명할 수 있는 포트폴리오를 지향합니다.</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-head"><div class="meta">02 · Projects</div><div><h2>작지만 설명 가능한 프로젝트</h2><p>같은 데이터를 다른 도구로 풀어보고, 분석·자동화·개발을 하나의 취업 스토리로 연결했습니다.</p></div></div>
+  <div class="grid">
+    <article class="card"><div class="meta">Project 01 · BI</div><h3>채용공고 분석 Looker Studio Dashboard</h3><p>채용공고 데이터를 직무, 요구 스킬, 지역, 경력 조건으로 정리해 취업 준비에 필요한 시장 신호를 빠르게 파악하는 대시보드입니다.</p><div class="metrics"><span class="metric">공고 300건</span><span class="metric">직무별 요구 스킬</span><span class="metric">신입 비중</span></div><span class="text-link">Looker Studio Demo ↗</span></article>
+    <article class="card"><div class="meta">Project 02 · Vibe Coding</div><h3>채용공고 Web Dashboard</h3><p>같은 데이터를 HTML/CSS/JavaScript로 다시 구현했습니다. BI 도구와 코드 기반 대시보드의 장단점을 직접 비교했습니다.</p><div class="metrics"><span class="metric">HTML / CSS / JS</span><span class="metric">Chart.js</span><span class="metric">Vercel Deploy</span></div><span class="text-link">Live Demo ↗</span><span class="text-link">GitHub ↗</span></article>
+    <article class="card"><div class="meta">Project 03 · Automation</div><h3>취업정보 Morning Brief</h3><p>Google Sheets와 Apps Script를 활용해 관심 공고와 취업 지원사업을 정리하고, 매일 아침 확인할 수 있는 요약 정보를 만드는 자동화 POC입니다.</p><div class="metrics"><span class="metric">Google Sheets</span><span class="metric">Apps Script</span><span class="metric">Slack / Email</span></div></article>
+    <article class="card"><div class="meta">Project 04 · AI POC</div><h3>Portfolio × JD Matcher</h3><p>내 포트폴리오와 채용공고를 구조화해 직무 일치, 필수 스킬, 프로젝트 경험을 기준으로 적합도와 부족한 역량을 보여주는 간단한 POC입니다.</p><div class="metrics"><span class="metric">Rule-based Score</span><span class="metric">AI Parsing</span><span class="metric">Gap Analysis</span></div><a class="text-link" href="#match">POC Preview ↓</a></article>
+  </div>
+</section>
+
+<section id="match">
+  <div class="section-head"><div class="meta">03 · Job Match POC</div><div><h2>포트폴리오와 JD를 비교해보면</h2><p>AI가 결과를 마음대로 결정하지 않도록 평가 기준을 먼저 정의하고, 각 점수의 근거를 확인할 수 있게 설계했습니다.</p></div></div>
+  <div class="match-demo">
+    <div class="score"><div><small>Marketing Data Analyst</small><div class="num">84%</div></div><div><b>지원 추천</b><br><small>핵심 요구 역량과 프로젝트 경험이 잘 맞습니다.</small></div></div>
+    <div class="card">
+      <div class="match-item"><div class="label"><span>직무 일치</span><span>28 / 30</span></div><div class="bar"><span style="width:93%"></span></div></div>
+      <div class="match-item"><div class="label"><span>필수 Skill</span><span>26 / 30</span></div><div class="bar"><span style="width:87%"></span></div></div>
+      <div class="match-item"><div class="label"><span>프로젝트 경험</span><span>17 / 20</span></div><div class="bar"><span style="width:85%"></span></div></div>
+      <div class="match-item"><div class="label"><span>우대 Skill</span><span>7 / 10</span></div><div class="bar"><span style="width:70%"></span></div></div>
+      <div class="match-item"><div class="label"><span>도메인 경험</span><span>6 / 10</span></div><div class="bar"><span style="width:60%"></span></div></div>
+      <p><b>Strong Match</b><br>GA4 · SQL · Looker Studio · 마케팅 데이터 해석</p>
+      <p><b>Gap</b><br>BigQuery 활용 사례와 Python 프로젝트 근거가 약함</p>
+      <p><b>Portfolio Tip</b><br>대시보드 프로젝트에 데이터 전처리 과정과 SQL 사용 내용을 추가하면 JD와의 연결성이 더 명확해집니다.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-head"><div class="meta">04 · Skills</div><div><h2>도구보다 문제 해결 흐름을 중심으로</h2><p>빠른 분석은 BI, 반복 제거는 자동화, 맞춤형 경험은 바이브 코딩으로 접근합니다.</p></div></div>
+  <div class="skill-list">
+    <div class="skill"><b>Analytics</b><span>GA4 · SQL · Google Sheets</span></div>
+    <div class="skill"><b>Visualization</b><span>Looker Studio · Chart.js</span></div>
+    <div class="skill"><b>Automation</b><span>Apps Script · Slack</span></div>
+    <div class="skill"><b>Vibe Coding</b><span>HTML · CSS · JavaScript</span></div>
+    <div class="skill"><b>Deployment</b><span>GitHub · Vercel</span></div>
+    <div class="skill"><b>AI</b><span>Prompting · Structuring · QA</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="callout"><div class="meta" style="color:#b8d4cc">Portfolio Story</div><h2 style="font-size:36px;margin:10px 0">분석 → 시각화 → 자동화 → 구현 → 배포</h2><p>이 포트폴리오는 여러 툴을 많이 사용했다는 것을 보여주기 위한 것이 아니라, 하나의 문제를 여러 방식으로 해결해보고 그 선택의 이유를 설명하기 위해 만들었습니다.</p></div>
+</section>
+
+</div></main>
+<footer><div class="wrap"><b>김하린 · Marketing Data Analyst Candidate</b><br>hello@example.com · github.com/example · linkedin.com/in/example</div></footer>
+</body>
+</html>
