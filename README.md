@@ -1,23 +1,46 @@
-# AC 취업준비생 포트폴리오 데모
+# Marketing Data & AI Portfolio Lab — Preview
 
-## 구성
-- 개인 소개 / 희망 직무
-- Looker Studio 대시보드 프로젝트
-- HTML/CSS/JS 웹 대시보드 프로젝트
-- Google Sheets + Apps Script 취업정보 자동화
-- Portfolio × JD Matching POC
-- Skills / Contact
+Educational demonstration: one fictional candidate, three connected learning deliverables.
 
-## 실행
-브라우저에서 `index.html`을 열면 됩니다.
+## Pages
 
-## 수강생 실습 시 바꿀 부분
-- 이름 / 지원 직무 / 자기소개
-- Skills
-- 프로젝트 설명
-- 프로젝트 링크
-- JD Matching 점수와 근거
-- 연락처 / GitHub
+| Path | Objective |
+|---|---|
+| `/` | Personal marketing-data portfolio with transparent evidence |
+| `/company-a/` | Tailored portfolio for fictional lifestyle-commerce employer **Atelier A** |
+| `/campaign/` | Fictional new-customer landing page with A/B headline switch and event-preview UX |
 
-## 배포
-GitHub 저장소에 올린 뒤 Vercel에서 Import하여 배포합니다.
+## Run locally
+
+No dependency or build step. Open `index.html` or serve the root directory:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then browse `http://localhost:8000/`.
+
+## Deployment
+
+GitHub branch `feature/marketing-ax-portfolio-lab` is intended for **Vercel Preview**. Production `main` is not to be changed until preview review and approval. After merge, production updates through the existing Git integration.
+
+## Editing workshop
+
+1. Replace fictional candidate material with real verifiable achievements and links.
+2. Research an employer, extract candidate-facing brand evidence, and replace `company-a/` concept.
+3. Make or refine `DESIGN.md`, generate design exploration in Google Stitch, and explain final design choices.
+4. Use Codex to implement and verify the landing page.
+5. Document a campaign hypothesis, CTA events, and one A/B copy comparison.
+6. Verify keyboard/mobile experiences and Vercel deployment.
+
+## Important disclaimers
+
+Kim Harin and Atelier A are fictional educational examples. The JD, sample projects and marketing campaign are mockups. No real promotion, discount, sign-up, scoring service, user tracking or verified performance metrics are provided. The campaign shows *local demo-only* event previews and does not send analytics events.
+
+## File map
+
+- `index.html`: personal portfolio
+- `company-a/index.html`: employer-specific variation
+- `campaign/index.html`: conversion-focused landing page
+- `assets/site.css`: shared responsive design system
+- `DESIGN.md`: brand/design tokens, experience and measurement assumptions
